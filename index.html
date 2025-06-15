@@ -2,63 +2,24 @@
 <html lang="pl">
 <head>
   <meta charset="UTF-8">
-  <title>Formularz kontaktowy</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      font-size: 12px;
-      background-color: #ccc;
-      color: #999;
-    }
-
-    .form-container {
-      margin: 50px;
-    }
-
-    input, textarea {
-      display: block;
-      margin-bottom: 10px;
-    }
-
-    .submit {
-      background-color: blue;
-      color: white;
-      font-size: 10px;         
-      padding: 2px 4px;        
-    }
-
-    .icon-button {
-      font-size: 8px;         
-      width: 16px;            
-      height: 16px;           
-      padding: 0;
-      background-color: #666;
-      color: white;
-      border: none;
-    }
-  </style>
+  <title>Ćwiczenie z alt</title>
 </head>
 <body>
+  <h1>Nasza firma</h1>
 
-  <div class="form-container">
-    <h1>Kontakt</h1>
-    
-    <form>
-      <input type="text" name="name" tabindex="-1">
-      <input type="email" name="email">
-      <textarea name="message"></textarea>
+  <!-- Logo – ważne dla identyfikacji marki -->
+  <img src="logo-firmy.png" alt="Logo firmy XYZ">
 
-      <button class="submit">Wyślij</button>
+  <!-- Dekoracja – nie niesie treści -->
+  <img src="fale-dekoracyjne.png" alt="">
 
-      
-      <button class="icon-button">⚙</button>
-    </form>
+  <!-- Infografika – przekazuje dane, więc musi mieć opis -->
+  <img src="klienci.png" alt="Infografika: 1200 zadowolonych klientów w 2024 roku">
 
-    
-    <p style="font-size: 10px;">
-      Kliknij <a href="#">tutaj</a> aby zobaczyć politykę prywatności.
-    </p>
-  </div>
-
+  <!-- Ikona przycisku – tylko ozdoba, tekst już wyjaśnia funkcję -->
+  <button>
+    <img src="koszyk.png" alt="">
+    Dodaj do koszyka
+  </button>
 </body>
 </html>
