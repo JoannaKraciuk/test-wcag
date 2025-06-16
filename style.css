@@ -10,6 +10,12 @@ body {
   box-sizing: inherit;
 }
 
+h1 {
+  color: #222; /* ciemny, dobrze widoczny tytuł */
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
 form {
   max-width: 450px;
   margin: 0 auto;
