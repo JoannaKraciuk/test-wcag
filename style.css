@@ -1,55 +1,54 @@
-<style>
-  /* Celowo zły kontrast na tej stronie */
-  body {
-    background-color: #fff;
-    color: #ccc; /* jasnoszary tekst, mało kontrastu */
-    font-family: Arial, sans-serif;
-    margin: 20px;
-  }
+body {
+  background-color: #fff;
+  color: #ccc; /* jasnoszary tekst, mało kontrastu */
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  box-sizing: border-box; /* kluczowe - ustawia box-sizing globalnie */
+}
 
-  form {
-    max-width: 450px; /* zwiększone trochę */
-    margin: 0 auto;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    background-color: #f9f9f9;
-    box-sizing: border-box;
-  }
+*, *::before, *::after {
+  box-sizing: inherit;
+}
 
-  label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
-    color: #ccc; /* zły kontrast */
-  }
+form {
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+}
 
-  input[type="text"],
-  input[type="email"] {
-    width: 100%;
-    max-width: 400px; /* ograniczona max szerokość */
-    padding: 8px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background-color: #fff;
-    color: #666; /* słabo widoczny tekst w polu */
-    box-sizing: border-box;
-  }
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #ccc; /* zły kontrast */
+}
 
-  button {
-    padding: 10px 20px;
-    background-color: #ddd; /* zły kontrast na przycisku */
-    border: none;
-    border-radius: 4px;
-    color: #eee; /* bardzo słaby kontrast tekstu */
-    cursor: pointer;
-  }
+input[type="text"],
+input[type="email"] {
+  width: 100%; /* zajmuje całą szerokość formularza minus padding */
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #666; /* słabo widoczny tekst w polu */
+}
 
-  button:hover,
-  button:focus {
-    background-color: #ccc;
-    color: #ddd;
-    outline: none;
-  }
-</style>
+button {
+  padding: 10px 20px;
+  background-color: #ddd; /* zły kontrast na przycisku */
+  border: none;
+  border-radius: 4px;
+  color: #eee; /* bardzo słaby kontrast tekstu */
+  cursor: pointer;
+}
+
+button:hover,
+button:focus {
+  background-color: #ccc;
+  color: #ddd;
+  outline: none;
+}
