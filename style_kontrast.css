@@ -1,5 +1,5 @@
 h1 {
-  color: #ccc; /* słaby kontrast */
+  color: #ccc;
 }
 
 p {
@@ -52,6 +52,6 @@ button {
 button:hover,
 button:focus {
   background-color: #0056b3;
-  outline: 3px solid #ffbf47; /* dobrze widoczny fokus */
+  outline: 3px solid #ffbf47;
   outline-offset: 2px;
 }
