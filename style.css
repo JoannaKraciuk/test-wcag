@@ -1,67 +1,34 @@
+/* Wszystkie strony poza 'kontrast.html' */
 body {
   background-color: #fff;
-  color: #ccc; /* jasnoszary tekst, mało kontrastu */
+  color: #222; /* ciemny tekst */
   font-family: Arial, sans-serif;
   margin: 20px;
-  box-sizing: border-box; /* kluczowe - ustawia box-sizing globalnie */
-}
-
-*, *::before, *::after {
-  box-sizing: inherit;
 }
 
 h1 {
-  color: #222; /* ciemny, dobrze widoczny tytuł */
+  color: #222;
   font-size: 2rem;
   margin-bottom: 15px;
 }
 
 p {
-  color: #222; /* ciemny, czytelny tekst */
+  color: #222;
   font-size: 1rem;
   line-height: 1.5;
 }
 
-
-form {
-  max-width: 450px;
-  margin: 0 auto;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  background-color: #f9f9f9;
-}
-
-label {
-  display: block;
-  margin-bottom: 8px;
-  font-weight: bold;
-  color: #ccc; /* zły kontrast */
-}
-
-input[type="text"],
-input[type="email"] {
-  width: 100%; /* zajmuje całą szerokość formularza minus padding */
-  padding: 8px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  background-color: #fff;
-  color: #666; /* słabo widoczny tekst w polu */
-}
-
 button {
+  background-color: #007BFF;
+  color: white;
   padding: 10px 20px;
-  background-color: #ddd; /* zły kontrast na przycisku */
   border: none;
   border-radius: 4px;
-  color: #eee; /* bardzo słaby kontrast tekstu */
   cursor: pointer;
 }
 
 button:hover,
 button:focus {
-  background-color: #ccc;
-  color: #ddd;
+  background-color: #0056b3;
   outline: none;
 }
