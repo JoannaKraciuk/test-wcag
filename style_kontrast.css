@@ -34,6 +34,12 @@ label {
   color: #ddd;
 }
 
+input::placeholder,
+textarea::placeholder{
+    color: #ddd;
+    opacity: 1;
+}
+
 button {
   background-color: #007BFF;
   color: white;
@@ -48,10 +54,4 @@ button:focus {
   background-color: #0056b3;
   outline: 3px solid #ffbf47; /* dobrze widoczny fokus */
   outline-offset: 2px;
-}
-
-input::placeholder,
-textarea::placeholder{
-    color: #ddd;
-    opaity: 1;
 }
