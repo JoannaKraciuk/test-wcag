@@ -1,75 +1,55 @@
-/* style.css */
+<style>
+  /* Celowo zły kontrast na tej stronie */
+  body {
+    background-color: #fff;
+    color: #ccc; /* jasnoszary tekst, mało kontrastu */
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
 
-body {
-  font-family: Arial, sans-serif;
-  margin: 20px;
-  background: #f9f9f9;
-  color: #222;
-}
+  form {
+    max-width: 450px; /* zwiększone trochę */
+    margin: 0 auto;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+  }
 
-header {
-  margin-bottom: 30px;
-}
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #ccc; /* zły kontrast */
+  }
 
-h1 {
-  margin-bottom: 10px;
-}
+  input[type="text"],
+  input[type="email"] {
+    width: 100%;
+    max-width: 400px; /* ograniczona max szerokość */
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #666; /* słabo widoczny tekst w polu */
+    box-sizing: border-box;
+  }
 
-nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  gap: 20px;
-}
+  button {
+    padding: 10px 20px;
+    background-color: #ddd; /* zły kontrast na przycisku */
+    border: none;
+    border-radius: 4px;
+    color: #eee; /* bardzo słaby kontrast tekstu */
+    cursor: pointer;
+  }
 
-nav ul li a {
-  text-decoration: none;
-  color: #005ea2;
-  font-weight: bold;
-  padding: 6px 12px;
-  border-radius: 4px;
-  transition: background-color 0.3s;
-}
-
-nav ul li a:hover,
-nav ul li a:focus {
-  background-color: #d0e7ff;
-  outline: none;
-}
-
-main {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  align-items: center;
-}
-
-main img {
-  display: block;
-  border-radius: 6px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-button {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 10px 20px;
-  background-color: #005ea2;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: background-color 0.3s;
-}
-
-button img {
-  border-radius: 4px;
-}
-
-button:hover,
-button:focus {
-  background-color: #004080;
-  outline: none;
-}
+  button:hover,
+  button:focus {
+    background-color: #ccc;
+    color: #ddd;
+    outline: none;
+  }
+</style>
