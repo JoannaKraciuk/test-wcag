@@ -48,6 +48,11 @@
       color: #ddd;
       outline: none;
     }
+
 h1 {
   color: #ccc; /* zły kontrast — jasnoszary na białym */
+}
+
+p {
+  color: #ccc; /* jasnoszary, słabo czytelny */
 }
