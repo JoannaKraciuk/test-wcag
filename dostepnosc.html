@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Błąd w dostępności z klawiatury</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Celowo blokujemy focus dla przycisku i linków */
+    button, a {
+      outline: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Dostępność z klawiatury - błąd</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html" tabindex="-1">Strona główna</a></li>
+        <li><a href="kontrast.html" tabindex="-1">Kontrast</a></li>
+        <li><a href="naglowki.html" tabindex="-1">Nagłówki</a></li>
+        <li><a href="linki.html" tabindex="-1">Linki</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <button tabindex="-1">Kliknij mnie</button>
+    <p>Uwaga: ten przycisk nie jest dostępny z klawiatury (tabindex="-1").</p>
+  </main>
+</body>
+</html>
