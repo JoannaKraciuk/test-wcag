@@ -4,6 +4,56 @@
   <meta charset="UTF-8" />
   <title>Strona główna</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 1rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .produkty {
+      display: flex;
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    .karta-produktu {
+      width: 250px;
+      border: 1px solid #ccc;
+      padding: 1rem;
+    }
+
+    .subskrypcja {
+      padding: 2rem;
+      background-color: #eee;
+    }
+
+    input[type="text"] {
+      width: 200px;
+      padding: 0.5rem;
+    }
+
+    button {
+      padding: 0.5rem 1rem;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -20,37 +70,36 @@
 
   <main>
 
-      <section class="produkty">
+    <section class="produkty">
       <div class="karta-produktu">
-        <img src="images/instagram.jpg" width="200" height="auto" tabindex="0" />
+        <img src="images/instagram.jpg" width="200" height="auto" />
         <h3>Logo</h3>
         <p>Logo na Twoją stronę</p>
         <p class="cena">49,99 zł</p>
-        <button>Dodaj do koszyka</button>
+        <button>Dodaj</button>
       </div>
 
       <div class="karta-produktu">
-        <img src="images/fale.png" width="200" height="auto" tabindex="0" />
+        <img src="images/fale.png" width="200" height="auto" />
         <h3>Ikona</h3>
         <p>Ikona na Twoją stronę</p>
         <p class="cena">79,99 zł</p>
-        <button>Dodaj do koszyka</button>
+        <button>Dodaj</button>
       </div>
 
       <div class="karta-produktu">
-        <img src="images/5 zasad WCAG.png" width="300" height="auto" tabindex="0" />
+        <img src="images/5 zasad WCAG.png" width="300" height="auto" />
         <h3>Infografika</h3>
         <p>Infografika na Twoją stronę</p>
         <p class="cena">99,99 zł</p>
-        <button>Dodaj do koszyka</button>
-
+        <button>Dodaj</button>
       </div>
     </section>
+
     <section class="subskrypcja">
       <div class="formularz">
-     <label for="sub">E-mail</label>
-      <input type="text" id="sub" name="name" placeholder="Wpisz swój email" />
-      <button>Zasubskrybuj</button>
+        <input type="text" id="sub" name="email" placeholder="Wpisz coś" />
+        <button>OK</button>
       </div>
     </section>
 
