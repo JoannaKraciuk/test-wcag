@@ -79,11 +79,15 @@ main {
   background-color: #004c99;
 }
 
-img.powiekszalny.powiekszony {
-  transform: scale(2);
+img.powiekszalny {
   transition: transform 0.3s ease;
+  cursor: zoom-in;
+}
+
+img.powiekszalny:hover {
+  transform: scale(2);
+  cursor: zoom-out;
   z-index: 10;
   position: relative;
 }
-
 
