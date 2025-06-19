@@ -78,3 +78,10 @@ main {
 .karta-produktu button:hover {
   background-color: #004c99;
 }
+
+#infografika.powiekszony {
+  transform: scale(2);
+  transition: transform 0.3s ease;
+  z-index: 100;
+  position: relative;
+}
