@@ -14,11 +14,13 @@ form {
   border: 2px solid #ccc;
   border-radius: 6px;
   box-shadow: 0 0 5px rgba(0,0,0,0.1);
-  display: flex
-  flex-direction: column
+  display: flex;
+  flex-direction: column; /* ← UWAGA: brakujący średnik i enter! */
 }
 
-input[type="text"], input[type="email"], textarea {
+input[type="text"],
+input[type="email"],
+textarea {
   width: 100%;
   padding: 8px 10px;
   margin-bottom: 12px;
@@ -35,9 +37,9 @@ label {
 }
 
 input::placeholder,
-textarea::placeholder{
-    color: #ddd;
-    opacity: 1;
+textarea::placeholder {
+  color: #ddd;
+  opacity: 1;
 }
 
 button {
@@ -55,3 +57,28 @@ button:focus {
   outline: 3px solid #ffbf47;
   outline-offset: 2px;
 }
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 1em 0 0 0;
+  display: flex;
+  gap: 1em; /* ← To daje odstęp między linkami */
+}
+
+nav li a {
+  text-decoration: none;
+  color: #b4daff;
+  font-weight: 600;
+  padding: 0.25em 0.5em;
+  border-radius: 4px;
+}
+
+nav li a:hover,
+nav li a:focus {
+  background-color: #003366;
+  color: #ffffff;
+  text-decoration: underline;
+  outline: none;
+}
+
