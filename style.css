@@ -187,3 +187,36 @@ button:focus {
   outline: none;
 }
 
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  position: fixed;
+  left: 10px;
+  top: 10px;
+  width: auto;
+  height: auto;
+  padding: 0.5em 1em;
+  background-color: #004c99;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 4px;
+  outline: 3px solid #ffbf47;
+  outline-offset: 2px;
+  text-decoration: none;
+  z-index: 1000;
+}
+
+button:focus,
+input:focus {
+  outline: 3px solid #ffbf47;
+  outline-offset: 2px;
+  box-shadow: 0 0 5px #ffbf47;
+}

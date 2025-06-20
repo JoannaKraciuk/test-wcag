@@ -4,9 +4,11 @@
   <meta charset="UTF-8" />
   <title>Strona główna</title>
   <link rel="stylesheet" href="style.css" />
-
 </head>
 <body>
+
+  <a href="#maincontent" class="skip-link">Przejdź do głównej zawartości</a>
+  <a href="#footer" class="skip-link">Przejdź do stopki</a>
   <header>
     <h1>Sklep dostępności</h1>
     <nav>
@@ -19,11 +21,11 @@
     </nav>
   </header>
 
-  <main>
+  <main id="maincontent">
 
     <section class="produkty">
       <div class="karta-produktu">
-        <img src="images/instagram.jpg"/>
+        <img src="images/instagram.jpg" alt="Logo Instagram"/>
         <h2>Logo</h2>
         <p>Logo na Twoją stronę</p>
         <p class="cena">49,99 zł</p>
@@ -31,7 +33,7 @@
       </div>
 
       <div class="karta-produktu">
-        <img src="images/fale.png" />
+        <img src="images/fale.png" alt="Ikona fal"/>
         <h2>Ikona</h2>
         <p>Ikona na Twoją stronę</p>
         <p class="cena">79,99 zł</p>
@@ -39,14 +41,14 @@
       </div>
 
       <div class="karta-produktu">
-        <img src="images/5 zasad WCAG.png"/>
+        <img src="images/5 zasad WCAG.png" alt="Infografika zasad WCAG"/>
         <h2>Infografika</h2>
         <p>Infografika na Twoją stronę</p>
         <p class="cena">99,99 zł</p>
         <button>Dodaj</button>
       </div>
     </section>
-
+    <main id="footer">
     <section class="subskrypcja">
       <div class="formularz">
         <input type="text" id="sub" name="email" placeholder="Wpisz e-mail" />
