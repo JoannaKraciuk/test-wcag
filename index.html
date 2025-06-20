@@ -23,7 +23,7 @@
 
     <section class="produkty">
       <div class="karta-produktu">
-        <img src="images/instagram.jpg" class="powiekszalny" tabindex="0"/>
+        <img src="images/instagram.jpg"/>
         <h2>Logo</h2>
         <p>Logo na Twoją stronę</p>
         <p class="cena">49,99 zł</p>
@@ -31,7 +31,7 @@
       </div>
 
       <div class="karta-produktu">
-        <img src="images/fale.png" class="powiekszalny" tabindex="0"/>
+        <img src="images/fale.png" />
         <h2>Ikona</h2>
         <p>Ikona na Twoją stronę</p>
         <p class="cena">79,99 zł</p>
@@ -39,7 +39,7 @@
       </div>
 
       <div class="karta-produktu">
-        <img src="images/5 zasad WCAG.png" id="infografika" class="powiekszalny" tabindex="0"/>
+        <img src="images/5 zasad WCAG.png"/>
         <h2>Infografika</h2>
         <p>Infografika na Twoją stronę</p>
         <p class="cena">99,99 zł</p>
@@ -55,24 +55,6 @@
     </section>
 
   </main>
-
-<script>
-const obrazki = document.querySelectorAll("img.powiekszalny");
-
-obrazki.forEach(img => {
-  img.addEventListener("click", () => {
-    img.classList.toggle("powiekszony");
-  });
-
-  img.addEventListener("keydown", (e) => {
-    if (e.key === "Enter" || e.key === " ") {
-      e.preventDefault();
-      img.classList.toggle("powiekszony");
-    }
-  });
-});
-
-</script>
 
 </body>
 </html>
