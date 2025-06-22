@@ -34,5 +34,4 @@ Zawiera przykłady linków, przycisków i formularzy z celowo wprowadzonymi bł�
 
 ## Autor
 
-Twoje Imię i Nazwisko (lub nick)  
-[E-mail lub link do profilu GitHub]
+Joanna Kraciuk
