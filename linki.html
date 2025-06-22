@@ -5,8 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Przydatne linki</title>
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Ikony Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-..."
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
 </head>
 <body>
+<a href="#maincontent" class="skip-link">Przejdź do głównej zawartości</a>
   <header>
     <h1>Przydatne linki</h1>
     <nav>
@@ -19,14 +29,30 @@
     </nav>
   </header>
 
-  <main>
-    <p>Przykład nieopisanych linków w ciekawych przyciskach:</p>
+  <main id="maincontent">
+    <p style="font-size: 1.5rem;">Chcesz nas poznać? Kliknij </p>
     <ul>
-      <li><a href="https://www.google.com" target="_blank" rel="noopener noreferrer">🔍 Kliknij</a></li>
-      <li><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">👍 Tutaj</a></li>
-      <li><a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">💼 Więcej</a></li>
+      <li>
+        <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
+          <i class="fas fa-search"></i> Kliknij
+        </a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-facebook-square"></i> Tutaj
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/joannakraciuk/" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-linkedin"></i> Dalej
+        </a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-instagram"></i> Więcej
+        </a>
+      </li>
     </ul>
-    <p>Linki wyglądają jak przyciski z ikonami, ale ich tekst nadal jest mało opisowy, więc nie wiadomo dokładnie dokąd prowadzą.</p>
   </main>
 </body>
 </html>
