@@ -2,8 +2,8 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0; /* jasniejsze tło */
-  color: #999; /* słabszy kontrast dla tekstu */
+  background-color: #f0f0f0;
+  color: #999;
 }
 
 /* Skip link */
@@ -24,11 +24,11 @@ html, body {
   width: auto;
   height: auto;
   padding: 0.5em 1em;
-  background-color: #6699cc; /* mniej intensywny niebieski */
+  background-color: #6699cc;
   color: #eee;
   font-weight: bold;
   border-radius: 4px;
-  outline: 3px solid #ccc; /* delikatniejsza obwódka */
+  outline: 3px solid #ccc;
   outline-offset: 2px;
   text-decoration: none;
   z-index: 1000;
@@ -36,15 +36,15 @@ html, body {
 
 /* Header i nawigacja */
 header {
-  background-color: #667788; /* stonowany niebiesko-szary */
+  background-color: #002244;
   padding: 1rem;
   width: 100%;
-  border-bottom: 1px solid #bbb; /* jasny szary */
+  border-bottom: 1px solid #bbb;
 }
 
 header h1 {
   font-size: 2.5rem;
-  color: #ccc; /* jaśniejszy, mniej kontrastowy */
+  color: #ccc;
   text-shadow: none;
   margin: 0;
   font-weight: 700;
@@ -61,17 +61,16 @@ nav ul {
   display: flex;
   flex-wrap: wrap;
   gap: 1em;
-  /* domyślnie poziomo */
 }
 
 nav li a {
   text-decoration: none;
-  color: #aaccee; /* delikatny niebieski */
+  color: #aaccee;
   font-weight: 600;
   padding: 0.4em 0.75em;
   border-radius: 4px;
   transition: background-color 0.3s ease;
-  display: block; /* lepsza klikalność */
+  display: block;
 }
 
 nav li a:hover,

@@ -2,8 +2,7 @@
 <html lang="pl">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Błędny układ nagłówków</title>
+  <title>Nasze artykuły</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -11,13 +10,13 @@
 <a href="#maincontent" class="skip-link">Przejdź do głównej zawartości</a>
 
 <header>
-  <h1>Ćwiczenie z nagłówkami</h1>
+  <h1>Nasze artykuły</h1>
   <nav>
     <ul>
       <li><a href="index.html">Strona główna</a></li>
-      <li><a href="kontrast.html">Kontrast</a></li>
-      <li><a href="dostepnosc-klawiatura.html">Dostępność z klawiatury</a></li>
-      <li><a href="linki.html">Linki</a></li>
+      <li><a href="kontrast.html">Formularz</a></li>
+      <li><a href="dostepnosc-klawiatura.html">Sklep z gadżetami</a></li>
+      <li><a href="linki.html">Przydatne linki</a></li>
     </ul>
   </nav>
 </header>
@@ -26,32 +25,40 @@
   <div class="articles">
 
     <section>
-      <h1>Wprowadzenie do dostępności</h1>
-      <p>Dostępność stron internetowych to bardzo ważny aspekt tworzenia witryn. Zapewnia, że wszyscy użytkownicy, niezależnie od ich możliwości, mogą korzystać z treści.</p>
+      <h2>Wprowadzenie do dostępności stron internetowych</h2>
+      <p>Dostępność stron internetowych jest fundamentem nowoczesnego projektowania. Umożliwia korzystanie z zasobów cyfrowych osobom z różnymi niepełnosprawnościami, takimi jak problemy ze wzrokiem, słuchem czy ograniczona sprawność motoryczna. Strony dostępne są przyjazne dla wszystkich użytkowników, co zwiększa ich zasięg i użyteczność.</p>
+      <p>Poprawna dostępność to także spełnianie wymagań prawnych i standardów WCAG, które wyznaczają, jak tworzyć treści łatwe do odczytania i nawigacji.</p>
       <img src="images/kobieta z tabletem.jpg" alt="Kobieta korzystająca z czytnika ekranu na tablecie" />
     </section>
 
     <section>
-      <h3>Znaczenie poprawnej struktury</h3>
-      <p>Poprawna hierarchia nagłówków pomaga użytkownikom z czytnikami ekranu szybko zorientować się w zawartości strony.</p>
+      <h2>Znaczenie poprawnej struktury nagłówków</h2>
+      <p>Struktura nagłówków HTML jest kluczowa dla zrozumienia i nawigacji po stronie, szczególnie dla osób korzystających z czytników ekranu. Hierarchia nagłówków (od h1 do h6) powinna odwzorowywać logiczny układ treści, podobnie jak spis treści w książce.</p>
+      <p>Poprawne stosowanie nagłówków pozwala szybko odnaleźć interesujące sekcje i zrozumieć, jakie informacje są ze sobą powiązane. Zła struktura natomiast może prowadzić do dezorientacji i utrudniać korzystanie ze strony.</p>
       <img src="images/struktura nagłówków.jpg" alt="Schemat przedstawiający strukturę nagłówków HTML" />
     </section>
 
     <section>
-      <h4>Problemy wynikające z pominięć</h4>
-      <p>Pominięcie nagłówka na danym poziomie może powodować dezorientację oraz trudności w nawigacji.</p>
+      <h3>Problemy wynikające z nieprawidłowej struktury nagłówków</h3>
+      <p>Pomijanie poziomów nagłówków, np. przechodzenie z h1 od razu do h4, łamie hierarchię i powoduje, że czytniki ekranu mogą niepoprawnie interpretować układ treści. Użytkownicy mogą mieć trudności ze zrozumieniem kontekstu oraz z szybką nawigacją.</p>
+      <p>Takie błędy często prowadzą do frustracji i mogą zniechęcać do korzystania ze strony, zwłaszcza osoby z niepełnosprawnościami wzroku. Dlatego ważne jest, aby każdy nagłówek pełnił swoją rolę i był logicznie osadzony w strukturze dokumentu.</p>
     </section>
 
     <section>
-      <h2>Jak unikać błędów w nagłówkach</h2>
-      <p>Należy stosować nagłówki zgodnie z ich naturalną kolejnością — od h1 do h6, nie pomijając poziomów.</p>
-      <img src="images/kod.jpg" alt="Zrzut ekranu przedstawiający błędne nagłówki HTML" />
+      <h3>Jak unikać błędów w nagłówkach</h3>
+      <p>Aby zachować poprawną strukturę, należy stosować nagłówki w kolejności, zaczynając od jednego nagłówka h1 na stronę (najważniejszy tytuł), a następnie korzystać z h2, h3 i dalej w sposób hierarchiczny.</p>
+      <p>Warto też wykorzystywać narzędzia do walidacji i testowania dostępności, które pomogą wychwycić błędy w strukturze i podpowiedzą, jak je naprawić. Zawsze planuj strukturę nagłówków z myślą o użytkowniku i semantyce treści.</p>
+      <img src="images/kod.jpg" alt="Zrzut ekranu przedstawiający prawidłowe nagłówki HTML" />
     </section>
 
     <section>
-      <h5>Przykłady złych praktyk</h5>
-      <p>Używanie nagłówków niezgodnie z ich semantyką, np. nagłówek h3 bez wcześniejszego h2, utrudnia korzystanie z czytników ekranu.</p>
+      <h4>Przykłady złych praktyk i ich konsekwencje</h4>
+      <p>Używanie nagłówków niezgodnie z ich przeznaczeniem, np. stosowanie wielu nagłówków h1 lub pomijanie kolejnych poziomów, może powodować problemy z indeksowaniem strony przez wyszukiwarki oraz utrudniać dostępność dla osób korzystających z technologii wspomagających.</p>
+      <p>Warto pamiętać, że nagłówki to nie tylko elementy wizualne, ale przede wszystkim narzędzia organizujące treść, dlatego ich prawidłowe użycie jest podstawą dobrej praktyki tworzenia stron internetowych.</p>
     </section>
 
   </div>
 </main>
+
+</body>
+</html>
