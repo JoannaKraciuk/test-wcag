@@ -82,9 +82,10 @@ nav li a {
 
 nav li a:hover,
 nav li a:focus {
-  background-color: #003366;
+  outline: 3px solid #ffbf47; /* jasnożółty kontur, taki jak skip link */
+  outline-offset: 2px;
+  background-color: #003366; /* podświetlenie tła, jak przy hover */
   color: #ffffff;
-  outline: none;
   text-decoration: underline;
 }
 
@@ -153,6 +154,11 @@ main {
 .karta-produktu button:hover {
   background-color: #004c99;
 }
+.karta-produktu button:focus {
+  outline: 3px solid #ffbf47; /* żółty, wyraźny obrys */
+  outline-offset: 2px;
+  background-color: #004c99; /* taki sam kolor jak hover/focus tła */
+}
 
 .subskrypcja {
   padding: 2em;
@@ -161,7 +167,14 @@ main {
   justify-content: center;
   align-items: center;
 }
-
+.subskrypcja button:hover {
+  background-color: #004c99;
+}
+.subskrypcja button:focus {
+  background-color: #004c99;
+  outline: 3px solid #ffbf47 !important;
+  outline-offset: 2px important;
+}
 .formularz {
   display: flex;
   flex-wrap: wrap;
