@@ -1,4 +1,4 @@
-# Strona Testowa Dostępności (Accessibility Test Page)
+# WCAG & Co. (Accessibility Test Page)
 
 To prosta strona demonstracyjna służąca do testowania i nauki dostępności stron internetowych zgodnie z wytycznymi WCAG.  
 Zawiera przykłady linków, przycisków i formularzy z celowo wprowadzonymi błędami dostępności, które pomagają zrozumieć, jak unikać typowych problemów.
