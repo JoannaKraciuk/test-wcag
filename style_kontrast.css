@@ -2,10 +2,11 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background-color: #e6e9f0;
-  color: #ccc;
+  background-color: #f0f0f0; /* jasniejsze tło */
+  color: #999; /* słabszy kontrast dla tekstu */
 }
 
+/* Skip link */
 .skip-link {
   position: absolute;
   left: -9999px;
@@ -23,11 +24,11 @@ html, body {
   width: auto;
   height: auto;
   padding: 0.5em 1em;
-  background-color: #004c99;
-  color: #fff;
+  background-color: #6699cc; /* mniej intensywny niebieski */
+  color: #eee;
   font-weight: bold;
   border-radius: 4px;
-  outline: 3px solid #ffbf47;
+  outline: 3px solid #ccc; /* delikatniejsza obwódka */
   outline-offset: 2px;
   text-decoration: none;
   z-index: 1000;
@@ -35,15 +36,16 @@ html, body {
 
 /* Header i nawigacja */
 header {
-  background-color: #324156;
-  padding: 1em;
-  border-bottom: 1px solid #ddd;
+  background-color: #667788; /* stonowany niebiesko-szary */
+  padding: 1rem;
+  width: 100%;
+  border-bottom: 1px solid #bbb; /* jasny szary */
 }
 
 header h1 {
   font-size: 2.5rem;
-  color: #f0f0f0;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+  color: #ccc; /* jaśniejszy, mniej kontrastowy */
+  text-shadow: none;
   margin: 0;
   font-weight: 700;
 }
@@ -57,84 +59,99 @@ nav ul {
   padding: 0;
   margin: 0;
   display: flex;
-  gap: 1em;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  gap: 1em;
+  /* domyślnie poziomo */
 }
 
 nav li a {
   text-decoration: none;
-  color: #b4daff;
+  color: #aaccee; /* delikatny niebieski */
   font-weight: 600;
   padding: 0.4em 0.75em;
   border-radius: 4px;
   transition: background-color 0.3s ease;
+  display: block; /* lepsza klikalność */
 }
 
 nav li a:hover,
 nav li a:focus {
-  background-color: #003366;
-  color: #ffffff;
+  background-color: #99aabb;
+  color: #eee;
   outline: none;
   text-decoration: underline;
 }
 
-/* Main container */
 main.container {
   max-width: 1000px;
   margin: 0 auto;
   padding: 2em;
 }
 
-/* Formularz */
 form {
   max-width: 400px;
-  margin: 20px auto;
-  padding: 15px;
-  background-color: #fff;
-  border: 2px solid #ccc;
+  margin: 2em auto;
+  padding: 1.5em;
+  background-color: #e8e8e8;
+  border: 1.5px solid #ccc;
   border-radius: 6px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  box-shadow: none;
   display: flex;
   flex-direction: column;
+  gap: 1em;
 }
 
 label {
   display: block;
-  margin-bottom: 6px;
+  margin-bottom: 0.5em;
   font-weight: bold;
-  color: #ddd;
+  color: #999;
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
   width: 100%;
-  padding: 8px 10px;
-  margin-bottom: 12px;
-  border: 1px solid #ddd;
+  padding: 0.75em 1em;
+  font-size: 1rem;
+  border: 1px solid #ccc;
   border-radius: 4px;
+  background-color: #fafafa;
+  color: #666;
   box-sizing: border-box;
 }
 
 input::placeholder,
 textarea::placeholder {
-  color: #ddd;
+  color: #bbb;
   opacity: 1;
 }
 
 button {
-  background-color: #007BFF;
-  color: white;
+  background-color: #aaccee;
+  color: #eee;
   border: none;
-  padding: 10px 18px;
+  padding: 0.75em 1.5em;
+  font-weight: 600;
   border-radius: 4px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 button:hover,
 button:focus {
-  background-color: #0056b3;
-  outline: 3px solid #ffbf47;
+  background-color: #99aabb;
+  outline: 3px solid #ccc;
   outline-offset: 2px;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5em;
+  }
+  nav li a {
+    width: 100%;
+  }
 }
