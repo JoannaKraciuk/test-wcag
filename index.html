@@ -4,7 +4,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Strona główna</title>
   <link rel="stylesheet" href="style.css" />
-
 </head>
 <body>
 
@@ -14,57 +13,57 @@
   }
 </script>
 
+<a href="#maincontent" class="skip-link" id="skip-main">Przejdź do głównej zawartości</a>
+<a href="#footer" class="skip-link" id="skip-footer">Przejdź do stopki</a>
 
-  <a href="#maincontent" class="skip-link">Przejdź do głównej zawartości</a>
-  <a href="#footer" class="skip-link">Przejdź do stopki</a>
-  <header>
-    <h1>WCAG & Co.</h1>
-    <nav>
-      <ul>
-        <li><a href="formularz.html">Formularz</a></li>
-        <li><a href="artykuly.html">Nasze artykuły</a></li>
-        <li><a href="gadzety.html">Sklep z gadżetami</a></li>
-        <li><a href="linki.html">Przydatne linki</a></li>
-      </ul>
-    </nav>
-  </header>
+<header id="main-header">
+  <h1 id="site-title">Patrz szerzej</h1>
+  <nav id="main-nav">
+    <ul>
+      <li><a href="formularz.html" id="nav-formularz">Formularz</a></li>
+      <li><a href="artykuly.html" id="nav-artykuly">Nasze artykuły</a></li>
+      <li><a href="gadzety.html" id="nav-gadzety">Sklep z gadżetami</a></li>
+      <li><a href="linki.html" id="nav-linki">Przydatne linki</a></li>
+    </ul>
+  </nav>
+</header>
 
-  <main id="maincontent">
+<main id="maincontent">
+  <section class="produkty" id="produkty">
+    <div class="karta-produktu" id="produkt-logo">
+      <img src="images/instagram.jpg" />
+      <h2>Logo</h2>
+      <p>Logo na Twoją stronę</p>
+      <p class="cena">49,99 zł</p>
+      <button id="dodaj-logo">Dodaj</button>
+    </div>
 
-    <section class="produkty">
-      <div class="karta-produktu">
-        <img src="images/instagram.jpg" />
-        <h2>Logo</h2>
-        <p>Logo na Twoją stronę</p>
-        <p class="cena">49,99 zł</p>
-        <button>Dodaj</button>
-      </div>
+    <div class="karta-produktu" id="produkt-ikona">
+      <img src="images/fale.png" />
+      <h2>Ikona</h2>
+      <p>Ikona na Twoją stronę</p>
+      <p class="cena">79,99 zł</p>
+      <button id="dodaj-ikona">Dodaj</button>
+    </div>
 
-      <div class="karta-produktu">
-        <img src="images/fale.png" />
-        <h2>Ikona</h2>
-        <p>Ikona na Twoją stronę</p>
-        <p class="cena">79,99 zł</p>
-        <button>Dodaj</button>
-      </div>
+    <div class="karta-produktu" id="produkt-infografika">
+      <img src="images/5 zasad WCAG.png" />
+      <h2>Infografika</h2>
+      <p>Infografika na Twoją stronę</p>
+      <p class="cena">99,99 zł</p>
+      <button id="dodaj-infografika">Dodaj</button>
+    </div>
+  </section>
+</main>
 
-      <div class="karta-produktu">
-        <img src="images/5 zasad WCAG.png"/>
-        <h2>Infografika</h2>
-        <p>Infografika na Twoją stronę</p>
-        <p class="cena">99,99 zł</p>
-        <button>Dodaj</button>
-      </div>
-    </section>
-    <footer id="footer">
-    <section class="subskrypcja">
-      <div class="formularz">
-        <input type="text" id="sub" name="email" placeholder="Wpisz e-mail" />
-        <button>Zasubskrybuj</button>
-      </div>
-    </section>
-
-  </footer>
+<footer id="footer">
+  <section class="subskrypcja" id="subskrypcja">
+    <div class="formularz" id="formularz-subskrypcji">
+      <input type="text" id="sub" name="email" placeholder="Wpisz e-mail" />
+      <button id="btn-subscribe">Zasubskrybuj</button>
+    </div>
+  </section>
+</footer>
 
 </body>
 </html>
