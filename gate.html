@@ -1,24 +1,22 @@
-<!DOCTYPE html>
-<html lang="pl">
-<head>
-  <meta charset="UTF-8">
-  <title id="page-title">Wejście chronione</title>
-  <script id="auth-script">
-    const correctPassword = "warsztat2025";
-    const accessGranted = localStorage.getItem("accessGranted");
+<body>
+  <form id="auth-form" onsubmit="return checkPassword(event)">
+    <label for="password">Podaj hasło:</label>
+    <input type="password" id="password" name="password" required />
+    <button type="submit">Wejdź</button>
+  </form>
 
-    if (accessGranted === "true") {
-      window.location.href = "index.html";
-    } else {
-      const entered = prompt("Podaj hasło:");
+  <script>
+    function checkPassword(event) {
+      event.preventDefault();
+      const correctPassword = "warsztat2025";
+      const entered = document.getElementById("password").value;
+
       if (entered === correctPassword) {
         localStorage.setItem("accessGranted", "true");
         window.location.href = "index.html";
       } else {
-        document.write("<h1 id='access-denied-title'>Brak dostępu</h1><p id='access-denied-message'>Błędne hasło.</p>");
+        alert("Błędne hasło.");
       }
     }
   </script>
-</head>
-<body id="body-root"></body>
-</html>
+</body>
