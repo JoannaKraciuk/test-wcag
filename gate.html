@@ -9,7 +9,12 @@
     function checkPassword(event) {
       event.preventDefault();
       const correctPassword = "warsztat2025";
-      const entered = document.getElementById("password").value;
+      const entered = document.getElementById("password").value.trim();
+
+      if (entered === "") {
+        alert("Proszę podać hasło.");
+        return false;
+      }
 
       if (entered === correctPassword) {
         localStorage.setItem("accessGranted", "true");
@@ -17,6 +22,8 @@
       } else {
         alert("Błędne hasło.");
       }
+
+      return false;
     }
   </script>
 </body>
