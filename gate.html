@@ -1,9 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Formularz logowania</title>
+  <style>
+    /* Styl komunikatu błędu */
+    .error-message {
+      color: red;
+      font-weight: bold;
+      margin-top: 0.5em;
+    }
+  </style>
+</head>
 <body>
   <form id="auth-form" onsubmit="return checkPassword(event)">
-    <label for="password">Podaj hasło:</label>
-    <input type="password" id="password" name="password" required />
+    <label for="password">
+      Podaj hasło: 
+      <span style="color: red;">*</span>
+      <span class="visually-hidden">pole wymagane</span>
+    </label>
+    <input type="password" id="password" name="password" required aria-describedby="password-desc" />
+    <div id="password-desc" class="visually-hidden">Pole wymagane</div>
     <button type="submit">Wejdź</button>
   </form>
+
+  <style>
+    /* Klasa ukrywająca tekst wizualnie, ale pozostawiająca go dla czytników */
+    .visually-hidden { 
+      position: absolute !important; 
+      width: 1px; 
+      height: 1px; 
+      padding: 0; 
+      margin: -1px; 
+      overflow: hidden; 
+      clip: rect(0, 0, 0, 0); 
+      white-space: nowrap; 
+      border: 0; 
+    }
+  </style>
 
   <script>
     function checkPassword(event) {
