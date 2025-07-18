@@ -8,24 +8,31 @@
 </head>
 <body>
 
-<a href="#maincontent" class="skip-link">Przejdź do głównej zawartości</a>
+
+<a href="#maincontent" class="skip-link" aria-label="">Przejdź do głównej zawartości</a>
 
 <header>
-  <h1>Nasze artykuły</h1>
-  <nav>
+  
+  <h1 aria-hidden="true">Nasze artykuły</h1>
+
+  
+  <nav aria-label="Menu kontaktowe">
     <ul>
-      <li><a href="index.html">Strona główna</a></li>
+      
+      <li><a href="index.html" aria-label="Koszyk">Strona główna</a></li>
       <li><a href="sklep.html">Sklep</a></li>
       <li><a href="artykuly.html" class="active">Nasze artykuły</a></li>
       <li><a href="koszyk.html">Koszyk</a></li>
       <li><a href="kontakt.html">Kontakt</a></li>
     </ul>
-    <ul class="social-media-links">
-        <li><a href="https://www.facebook.com" target="_blank" class="fb" title="Facebook">Facebook</a></li>
-        <li><a href="https://twitter.com" target="_blank" class="tt" title="Twitter">Twitter</a></li>
-        <li><a href="https://www.instagram.com" target="_blank" class="in" title="Instagram">Instagram</a></li>
-        <li><a href="https://www.linkedin.com" target="_blank" class="ln" title="LinkedIn">LinkedIn</a></li>
-        <li><a href="https://www.youtube.com" target="_blank" class="yt" title="YouTube">YouTube</a></li>
+
+    
+    <ul class="social-media-links" aria-labelledby="brakElementu">
+      <li><a href="https://www.facebook.com" target="_blank" class="fb" title="Facebook">Facebook</a></li>
+      <li><a href="https://twitter.com" target="_blank" class="tt" title="Twitter">Twitter</a></li>
+      <li><a href="https://www.instagram.com" target="_blank" class="in" title="Instagram">Instagram</a></li>
+      <li><a href="https://www.linkedin.com" target="_blank" class="ln" title="LinkedIn">LinkedIn</a></li>
+      <li><a href="https://www.youtube.com" target="_blank" class="yt" title="YouTube">YouTube</a></li>
     </ul>
   </nav>
 </header>
@@ -37,15 +44,16 @@
       <img src="images/historia.jpg" alt="Historia jazzu" />
       <div class="article-text">
         <h2>Historia jazzu</h2>
-        <p>Jazz to gatunek muzyczny, który powstał na początku XX wieku w Stanach Zjednoczonych. Charakteryzuje się improwizacją, syncopacją i wyjątkową ekspresją emocji. Od czasów Louisa Armstronga po współczesnych artystów, jazz pozostaje jednym z najbardziej wpływowych gatunków muzycznych.</p>
+        <p>Jazz to gatunek muzyczny...</p>
       </div>
     </article>
 
+    
     <article class="article-item">
-      <img src="images/festiwal.png" alt="Festiwale jazzowe" />
+      <img src="images/festiwal.png" alt="" />
       <div class="article-text">
         <h2>Festiwale jazzowe</h2>
-        <p>Festiwale jazzowe to wyjątkowe wydarzenia, które gromadzą miłośników muzyki z całego świata. Od Montreux po Newport, te imprezy oferują niezapomniane koncerty, warsztaty i spotkania z legendami jazzu. Poznaj historię i charakterystykę największych festiwali jazzowych.</p>
+        <p>Festiwale jazzowe to wyjątkowe wydarzenia...</p>
       </div>
     </article>
 
@@ -53,7 +61,7 @@
       <img src="images/instrumenty.jpg" alt="Instrumenty muzyczne" />
       <div class="article-text">
         <h2>Instrumenty muzyczne</h2>
-        <p>Jazz to muzyka oparta na bogatym brzmieniu różnych instrumentów. Saksofon, trąbka, fortepian, kontrabas i perkusja to tylko niektóre z nich. Dowiedz się, jak każdy z tych instrumentów wpływa na charakter jazzu i jakie techniki wykonawcze są najczęściej stosowane.</p>
+        <p>Jazz to muzyka oparta na bogatym brzmieniu różnych instrumentów...</p>
       </div>
     </article>
 
@@ -61,11 +69,12 @@
       <img src="images/improwizacja.jpg" alt="Improwizacja w jazzie" />
       <div class="article-text">
         <h2>Improwizacja w jazzie</h2>
-        <p>Improwizacja jest sercem jazzu. Pozwala muzykom na wyrażenie własnych emocji i kreatywności w czasie rzeczywistym. Przeczytaj o technikach improwizacyjnych, które stosują najlepsi artyści oraz o tym, jak ćwiczyć tę umiejętność.</p>
+        <p>Improwizacja jest sercem jazzu...</p>
+
+        <!-- BŁĄD WCAG: pseudo-przycisk z rolą, ale bez klawiaturowej dostępności -->
+        <div role="button" onclick="alert('Zapisano!')">Zapisz</div>
       </div>
     </article>
-
-    <!-- Dodaj kolejne artykuły analogicznie -->
 
   </div>
 </main>
