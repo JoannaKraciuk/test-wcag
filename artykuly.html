@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nasze artykuły</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nasze artykuły muzyczne</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -14,51 +15,65 @@
   <nav>
     <ul>
       <li><a href="index.html">Strona główna</a></li>
-      <li><a href="formularz.html">Formularz</a></li>
-      <li><a href="gadzety.html">Sklep z gadżetami</a></li>
-      <li><a href="linki.html">Przydatne linki</a></li>
+      <li><a href="sklep.html">Sklep</a></li>
+      <li><a href="artykuly.html" class="active">Nasze artykuły</a></li>
+      <li><a href="koszyk.html">Koszyk</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+    <ul class="social-media-links">
+        <li><a href="https://www.facebook.com" target="_blank" class="fb" title="Facebook">Facebook</a></li>
+        <li><a href="https://twitter.com" target="_blank" class="tt" title="Twitter">Twitter</a></li>
+        <li><a href="https://www.instagram.com" target="_blank" class="in" title="Instagram">Instagram</a></li>
+        <li><a href="https://www.linkedin.com" target="_blank" class="ln" title="LinkedIn">LinkedIn</a></li>
+        <li><a href="https://www.youtube.com" target="_blank" class="yt" title="YouTube">YouTube</a></li>
     </ul>
   </nav>
 </header>
 
 <main id="maincontent">
-  <div class="articles">
+  <div class="articles-list">
 
-    <section>
-      <h2>Wprowadzenie do dostępności stron internetowych</h2>
-      <p>Dostępność stron internetowych jest fundamentem nowoczesnego projektowania. Umożliwia korzystanie z zasobów cyfrowych osobom z różnymi niepełnosprawnościami, takimi jak problemy ze wzrokiem, słuchem czy ograniczona sprawność motoryczna. Strony dostępne są przyjazne dla wszystkich użytkowników, co zwiększa ich zasięg i użyteczność.</p>
-      <p>Poprawna dostępność to także spełnianie wymagań prawnych i standardów WCAG, które wyznaczają, jak tworzyć treści łatwe do odczytania i nawigacji.</p>
-      <img src="images/kobieta z tabletem.jpg" alt="Kobieta korzystająca z czytnika ekranu na tablecie" />
-    </section>
+    <article class="article-item">
+      <img src="images/historia.jpg" alt="Historia jazzu" />
+      <div class="article-text">
+        <h2>Historia jazzu</h2>
+        <p>Jazz to gatunek muzyczny, który powstał na początku XX wieku w Stanach Zjednoczonych. Charakteryzuje się improwizacją, syncopacją i wyjątkową ekspresją emocji. Od czasów Louisa Armstronga po współczesnych artystów, jazz pozostaje jednym z najbardziej wpływowych gatunków muzycznych.</p>
+      </div>
+    </article>
 
-    <section>
-      <h4>Znaczenie poprawnej struktury nagłówków</h4>
-      <p>Struktura nagłówków HTML jest kluczowa dla zrozumienia i nawigacji po stronie, szczególnie dla osób korzystających z czytników ekranu. Hierarchia nagłówków (od h1 do h6) powinna odwzorowywać logiczny układ treści, podobnie jak spis treści w książce.</p>
-      <p>Poprawne stosowanie nagłówków pozwala szybko odnaleźć interesujące sekcje i zrozumieć, jakie informacje są ze sobą powiązane. Zła struktura natomiast może prowadzić do dezorientacji i utrudniać korzystanie ze strony.</p>
-      <img src="images/struktura nagłówków.jpg" alt="Schemat przedstawiający strukturę nagłówków HTML" />
-    </section>
+    <article class="article-item">
+      <img src="images/festiwal.png" alt="Festiwale jazzowe" />
+      <div class="article-text">
+        <h2>Festiwale jazzowe</h2>
+        <p>Festiwale jazzowe to wyjątkowe wydarzenia, które gromadzą miłośników muzyki z całego świata. Od Montreux po Newport, te imprezy oferują niezapomniane koncerty, warsztaty i spotkania z legendami jazzu. Poznaj historię i charakterystykę największych festiwali jazzowych.</p>
+      </div>
+    </article>
 
-    <section>
-      <h3>Problemy wynikające z nieprawidłowej struktury nagłówków</h3>
-      <p>Pomijanie poziomów nagłówków, np. przechodzenie z h1 od razu do h4, łamie hierarchię i powoduje, że czytniki ekranu mogą niepoprawnie interpretować układ treści. Użytkownicy mogą mieć trudności ze zrozumieniem kontekstu oraz z szybką nawigacją.</p>
-      <p>Takie błędy często prowadzą do frustracji i mogą zniechęcać do korzystania ze strony, zwłaszcza osoby z niepełnosprawnościami wzroku. Dlatego ważne jest, aby każdy nagłówek pełnił swoją rolę i był logicznie osadzony w strukturze dokumentu.</p>
-    </section>
+    <article class="article-item">
+      <img src="images/instrumenty.jpg" alt="Instrumenty muzyczne" />
+      <div class="article-text">
+        <h2>Instrumenty muzyczne</h2>
+        <p>Jazz to muzyka oparta na bogatym brzmieniu różnych instrumentów. Saksofon, trąbka, fortepian, kontrabas i perkusja to tylko niektóre z nich. Dowiedz się, jak każdy z tych instrumentów wpływa na charakter jazzu i jakie techniki wykonawcze są najczęściej stosowane.</p>
+      </div>
+    </article>
 
-    <section>
-      <h5>Jak unikać błędów w nagłówkach</h5>
-      <p>Aby zachować poprawną strukturę, należy stosować nagłówki w kolejności, zaczynając od jednego nagłówka h1 na stronę (najważniejszy tytuł), a następnie korzystać z h2, h3 i dalej w sposób hierarchiczny.</p>
-      <p>Warto też wykorzystywać narzędzia do walidacji i testowania dostępności, które pomogą wychwycić błędy w strukturze i podpowiedzą, jak je naprawić. Zawsze planuj strukturę nagłówków z myślą o użytkowniku i semantyce treści.</p>
-      <img src="images/kod.jpg" alt="Zrzut ekranu przedstawiający prawidłowe nagłówki HTML" />
-    </section>
+    <article class="article-item">
+      <img src="images/improwizacja.jpg" alt="Improwizacja w jazzie" />
+      <div class="article-text">
+        <h2>Improwizacja w jazzie</h2>
+        <p>Improwizacja jest sercem jazzu. Pozwala muzykom na wyrażenie własnych emocji i kreatywności w czasie rzeczywistym. Przeczytaj o technikach improwizacyjnych, które stosują najlepsi artyści oraz o tym, jak ćwiczyć tę umiejętność.</p>
+      </div>
+    </article>
 
-    <section>
-      <h4>Przykłady złych praktyk i ich konsekwencje</h4>
-      <p>Używanie nagłówków niezgodnie z ich przeznaczeniem, np. stosowanie wielu nagłówków h1 lub pomijanie kolejnych poziomów, może powodować problemy z indeksowaniem strony przez wyszukiwarki oraz utrudniać dostępność dla osób korzystających z technologii wspomagających.</p>
-      <p>Warto pamiętać, że nagłówki to nie tylko elementy wizualne, ale przede wszystkim narzędzia organizujące treść, dlatego ich prawidłowe użycie jest podstawą dobrej praktyki tworzenia stron internetowych.</p>
-    </section>
+    <!-- Dodaj kolejne artykuły analogicznie -->
 
   </div>
 </main>
 
+<footer>
+  <p>&copy; 2025 Patrz szeroko – Sklep muzyczny. Wszelkie prawa zastrzeżone.</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>

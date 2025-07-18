@@ -1,69 +1,145 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Strona główna</title>
+  <title>Patrz szeroko - odkrywaj więcej!</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<script>
-  if (localStorage.getItem("accessGranted") !== "true") {
-    window.location.href = "gate.html";
-  }
-</script>
+<a href="#maincontent" class="skip-link">Przejdź do głównej zawartości</a>
 
-<a href="#maincontent" class="skip-link" id="skip-main">Przejdź do głównej zawartości</a>
-<a href="#footer" class="skip-link" id="skip-footer">Przejdź do stopki</a>
+<header>
 
-<header id="main-header">
-  <h1 id="site-title">Patrz szerzej</h1>
-  <nav id="main-nav">
+  <h1>Patrz szeroko - odkrywaj więcej!</h1>
+  <nav>
     <ul>
-      <li><a href="formularz.html" id="nav-formularz">Formularz</a></li>
-      <li><a href="artykuly.html" id="nav-artykuly">Nasze artykuły</a></li>
-      <li><a href="gadzety.html" id="nav-gadzety">Sklep z gadżetami</a></li>
-      <li><a href="linki.html" id="nav-linki">Przydatne linki</a></li>
+      <li><a href="index.html">Strona główna</a></li>
+        <li><a href="sklep.html">Sklep</a></li>
+        <li><a href="artykuly.html">Nasze artykuły</a></li>
+        <li><a href="koszyk.html" class="active">Koszyk</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+    <ul class="social-media-links">
+      <li><a href="https://www.facebook.com" target="_blank" class="fb" title="Facebook">Facebook</a></li>
+      <li><a href="https://twitter.com" target="_blank" class="tt" title="Twitter">Twitter</a></li>
+      <li><a href="https://www.instagram.com" target="_blank" class="in" title="Instagram">Instagram</a></li>
+      <li><a href="https://www.linkedin.com" target="_blank" class="ln" title="LinkedIn">LinkedIn</a></li>
+      <li><a href="https://www.youtube.com" target="_blank" class="yt" title="YouTube">YouTube</a></li>
     </ul>
   </nav>
 </header>
 
 <main id="maincontent">
-  <section class="produkty" id="produkty">
-    <div class="karta-produktu" id="produkt-logo">
-      <img src="images/instagram.jpg" />
-      <h2>Logo</h2>
-      <p>Logo na Twoją stronę</p>
-      <p class="cena">49,99 zł</p>
-      <button id="dodaj-logo">Dodaj</button>
-    </div>
+  <section aria-labelledby="wstep">
+    <h3 id="wstep">Witamy w sklepie "Patrz szeroko - odkrywaj więcej!"</h3>
+    <p>Jesteśmy pasjonatami muzyki i chcemy dzielić się tą pasją z innymi. Nasz sklep powstał z miłości do dźwięków, które poruszają duszę – od jazzu, przez rocka, aż po elektroniczne brzmienia przyszłości.</p>
+  </section>
 
-    <div class="karta-produktu" id="produkt-ikona">
-      <img src="images/fale.png" />
-      <h2>Ikona</h2>
-      <p>Ikona na Twoją stronę</p>
-      <p class="cena">79,99 zł</p>
-      <button id="dodaj-ikona">Dodaj</button>
-    </div>
+  <section aria-labelledby="o-nas">
+    <h3 id="o-nas">Jak powstał nasz sklep?</h3>
+    <p>Wszystko zaczęło się w 2022 roku od małego stoiska na festiwalu muzycznym. Założyciele sklepu postanowili stworzyć miejsce, gdzie każdy znajdzie coś dla siebie: klasyczne płyty winylowe, nowoczesne gadżety muzyczne oraz wyjątkowe wydania kolekcjonerskie. Tak powstało "Patrz szeroko" – sklep z duszą i pasją.</p>
+    <p>Dziś działamy online i na żywo – stale poszerzamy ofertę, organizujemy spotkania i wspieramy młodych artystów. Dołącz do naszej społeczności melomanów!</p>
+  </section>
 
-    <div class="karta-produktu" id="produkt-infografika">
-      <img src="images/5 zasad WCAG.png" />
-      <h2>Infografika</h2>
-      <p>Infografika na Twoją stronę</p>
-      <p class="cena">99,99 zł</p>
-      <button id="dodaj-infografika">Dodaj</button>
+  <section aria-labelledby="misja">
+    <h3 id="misja">Nasza misja</h3>
+    <p>Chcemy nie tylko sprzedawać muzykę, ale także inspirować i edukować. Wierzymy, że muzyka otwiera umysły, dlatego zachęcamy do odkrywania mniej znanych brzmień, wspierania lokalnych artystów i słuchania świadomie.</p>
+  </section>
+
+  <section aria-labelledby="oferta">
+    <h1 id="oferta">Nasze nowości</h1>
+    <div class="cards">
+
+      <article class="karta-produktu wersja-plyty" aria-label="Płyta winylowa z jazzem">
+        <img src="images/okładka.webp" alt="Okładka płyty winylowej Jazz Classics" />
+        <h3>Winyl – Jazz Classics<br><span class="autor">John Coltrane</span></h3>
+        <p>Zbiór kluczowych kompozycji jednego z najwybitniejszych saksofonistów w historii jazzu. „Jazz Classics” to esencja stylu Coltrane’a – głęboko duchowa, wirtuozerska i pełna emocji. Album prezentuje modalny jazz i hard bop w mistrzowskim wydaniu.</p>
+        <div class="karta-akcja">
+          <p class="cena">69,99 zł</p>
+           <button data-product-id="1" data-title="Winyl – Jazz Classics" data-price="69,99" data-img="images/okładka.webp" >Dodaj do koszyka </button>
+        </div>
+      </article>
+
+      <article class="karta-produktu wersja-plyty" aria-label="Płyta winylowa z jazzem">
+        <img src="images/możdżer.webp" alt="Okładka płyty winylowej Jazz Classics" />
+        <h3>Walter Norris & Leszek Możdżer – The Last Set</h3>
+        <p>Legendarne spotkanie dwóch mistrzów fortepianu jazzowego – Waltera Norrisa i Leszka Możdżera. „The Last Set” to pełna emocji i ekspresji rejestracja ich wspólnego koncertu, który stał się jednocześnie artystycznym pożegnaniem Norrisa ze sceną.</p>
+        <div class="karta-akcja">
+          <p class="cena">69,99 zł</p>
+          <button data-product-id="2" data-title="Winyl – The Last Set" data-price="69,99" data-img="images/możdżer.webp" >Dodaj do koszyka </button>
+        </div>
+      </article>
+
+      <article class="karta-produktu wersja-plyty" aria-label="Słuchawki bezprzewodowe">
+        <img src="images/słuchawki.jpg" alt="Słuchawki JBL Wave 200 TWS" />
+        <h3>JBL Wave 200 TWS</h3>
+        <p>Lekkie, dokanałowe słuchawki True Wireless z technologią JBL Deep Bass i 8 mm przetwornikami. Oferują do 5 h odtwarzania (+15 h etui) bez zakłóceń dzięki Bluetooth 5.0. Mają dotykowe sterowanie, mikrofon, odporność IPX2 i ergonomiczny kształt.</p>
+        <div class="karta-akcja">
+          <p class="cena">69,99 zł</p>
+          <button data-product-id="3" data-title="Słuchawki JBL" data-price="69,99" data-img="images/słuchawki.jpg" >Dodaj do koszyka </button>
+        </div>
+      </article>
+
+      <article class="karta-produktu wersja-plyty" aria-label="Głośnik Bluetooth">
+        <img src="images/jbl.jpg" alt="Głośnik Bluetooth JBL Go 4" width="270" />
+        <h3>Głośnik Bluetooth JBL Go 4</h3>
+        <p>Idealny towarzysz w podróży. Dzięki certyfikatowi IP67, kompaktowej konstrukcji i 7 h pracy, oferuje czysty dźwięk JBL Pro Sound. Wspiera Bluetooth 5.3, dual‑connect i aplikację JBL Portable.</p>
+        <div class="karta-akcja">
+          <p class="cena">69,99 zł</p>
+           <button data-product-id="4" data-title="Głośnik JBL" data-price="69,99" data-img="images/jbl.jpg"> Dodaj do koszyka </button>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section aria-labelledby="opinie">
+    <h1 id="opinie">Opinie klientów</h1>
+    <div class="cards">
+      <blockquote class="card">
+        <p>„Świetna obsługa i bardzo szybka wysyłka! Płyty są w doskonałym stanie.”</p>
+        <footer>- Anna</footer>
+      </blockquote>
+      <blockquote class="card">
+        <p>„Kocham to miejsce! Mają unikatowe gadżety i produkty, których nie znajdziesz nigdzie indziej.”</p>
+        <footer>- Michał</footer>
+      </blockquote>
+      <blockquote class="card">
+        <p>„Obsługa klienta na najwyższym poziomie, polecam każdemu melomanowi.”</p>
+        <footer>- Karolina</footer>
+      </blockquote>
+      <blockquote class="card">
+        <p>„Świetna obsługa i szybka dostawa. Produkt spełnił wszystkie moje oczekiwania!”</p>
+        <footer>- Kasia</footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <section aria-labelledby="aktualnosci">
+    <h3 id="aktualnosci">Aktualności</h3>
+    <div class="cards">
+      <article class="card">
+        <h3>Nowa kolekcja płyt winylowych</h3>
+        <p>Wprowadziliśmy do sklepu nowe, limitowane edycje klasycznych płyt winylowych. Sprawdź, co przygotowaliśmy!</p>
+      </article>
+      <article class="card">
+        <h3>Promocja na gadżety muzyczne</h3>
+        <p>W tym miesiącu 20% rabatu na wszystkie słuchawki i głośniki Bluetooth.</p>
+      </article>
+      <article class="card">
+        <h3>Spotkanie z lokalnym artystą</h3>
+        <p>Zapraszamy na wydarzenie online z zespołem Jazz Dreams już 20 lipca. Szczegóły wkrótce!</p>
+      </article>
     </div>
   </section>
 </main>
 
-<footer id="footer">
-  <section class="subskrypcja" id="subskrypcja">
-    <div class="formularz" id="formularz-subskrypcji">
-      <input type="text" id="sub" name="email" placeholder="Wpisz e-mail" />
-      <button id="btn-subscribe">Zasubskrybuj</button>
-    </div>
-  </section>
+<footer>
+  <p>&copy; 2025 Patrz szeroko – Sklep muzyczny. Wszelkie prawa zastrzeżone.</p>
 </footer>
+<script src="script.js"></script>
 
 </body>
 </html>

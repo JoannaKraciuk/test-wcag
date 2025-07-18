@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Twój koszyk – Patrz szeroko</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<a href="#maincontent" class="skip-link">Przejdź do głównej zawartości</a>
+
+<header>
+  <h1>Patrz szeroko – odkrywaj więcej!</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Strona główna</a></li>
+      <li><a href="sklep.html">Sklep</a></li>
+      <li><a href="artykuly.html">Nasze artykuły</a></li>
+      <li><a href="koszyk.html" class="active" aria-current="page">Koszyk</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+    <ul class="social-media-links">
+      <li><a href="https://www.facebook.com" target="_blank" class="fb" title="Facebook">Facebook</a></li>
+      <li><a href="https://twitter.com" target="_blank" class="tt" title="Twitter">Twitter</a></li>
+      <li><a href="https://www.instagram.com" target="_blank" class="in" title="Instagram">Instagram</a></li>
+      <li><a href="https://www.linkedin.com" target="_blank" class="ln" title="LinkedIn">LinkedIn</a></li>
+      <li><a href="https://www.youtube.com" target="_blank" class="yt" title="YouTube">YouTube</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="maincontent" role="main">
+  <section id="koszyk" aria-labelledby="koszyk-naglowek">
+    <h2 id="koszyk-naglowek">Twój koszyk</h2>
+
+    <p id="koszyk-pusty">Twój koszyk jest pusty.</p>
+    <ul id="lista-koszyka" aria-live="polite"></ul>
+
+    <p id="suma">Suma: 0,00 zł</p>
+
+    <button type="button" class="btn-zamow" aria-label="Przejdź do zamówienia">
+      Przejdź do zamówienia
+    </button>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 Patrz szeroko – Sklep muzyczny. Wszelkie prawa zastrzeżone.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
